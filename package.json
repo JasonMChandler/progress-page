@@ -1,14 +1,14 @@
 {
   "name": "material-ui-progress-page",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "project progress page",
   "main": "dist/main.js",
   "scripts": {
     "build": "webpack --mode production"
   },
   "repository": {
-   "type": "git",
-   "url": "https://github.com/JasonMChandler/progress-page.git"
+    "type": "git",
+    "url": "https://github.com/JasonMChandler/progress-page.git"
   },
   "keywords": [
     "material",
