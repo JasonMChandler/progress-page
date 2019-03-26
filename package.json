@@ -6,6 +6,10 @@
   "scripts": {
     "build": "webpack --mode production"
   },
+  "repository": {
+   "type": "git",
+   "url": "https://github.com/JasonMChandler/progress-page.git"
+  },
   "keywords": [
     "material",
     "ui",
