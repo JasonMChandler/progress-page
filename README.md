@@ -1,16 +1,28 @@
 # material-ui-progress-page
 
+## Installation
+
+npm i material-ui-progress-page
+
+## Usage
+
+import ProgressPage from 'progress-page';
+
+<ProgressPage />
+
+Scroll down for props that are accepted
+
 ## description
 
 A project progress page designed for freelancers to enable clients to see how their project is going.
 
-###Basic elements:
+### Basic elements
 
 * Header for the title
 * 3 tabs - hours - specifications - contract
 * material ui stepper to show what step the project is on
 
-###Tabs
+## Tabs
 
 Clicking a tab is there to display markdown text
 
