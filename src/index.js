@@ -171,7 +171,7 @@ ContentArea.defaultProps = {
     paperStepperAreaBigScreenProps: { elevation: 8, square: true, style: { position: "fixed", bottom: 0, left: 0, height: 130, width: "100%" } },
     stepperSmallScreenProps: {},
     stepperBigScreenProps: {},
-    stepSmallScreePropsn: {},
+    stepSmallScreenProps: {},
     stepBigScreenProps: {},
     stepLabelSmallScreenProps: {},
     stepLabelBigScreenProps: {},
