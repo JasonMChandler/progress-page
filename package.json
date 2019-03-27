@@ -1,6 +1,6 @@
 {
   "name": "material-ui-progress-page",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "description": "project progress page",
   "main": "dist/main.js",
   "scripts": {
