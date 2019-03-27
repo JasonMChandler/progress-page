@@ -103,7 +103,7 @@ class ContentArea extends React.Component {
           </Hidden>
         </div></div>
           <Hidden smUp>
-          <Paper {...this.props.PaperStepperAreaSmallScreenProps}>
+          <Paper {...this.props.paperStepperAreaSmallScreenProps}>
 
 
                   <Stepper activeStep={this.props.step} orientation="vertical" {...this.props.stepperSmallScreenProps} >
@@ -116,7 +116,7 @@ class ContentArea extends React.Component {
           </Paper>
           </Hidden>
       <Hidden xsDown>
-      <Paper {...this.props.PaperStepperAreaBigScreenProps}>
+      <Paper {...this.props.paperStepperAreaBigScreenProps}>
 
           <Stepper activeStep={this.props.step} alternativeLabel {...this.props.stepperBigScreenProps}>
           {this.props.steps.map(label => (
@@ -140,8 +140,8 @@ ContentArea.propTypes = {
     sidePanelTypographyProps: PropTypes.object,
     contentAreaBigScreenProps: PropTypes.object,
     contentAreaSmallScreenProps: PropTypes.object,
-    PaperStepperAreaBigScreenProps: PropTypes.object,
-    PaperStepperAreaSmallScreenProps: PropTypes.object,
+    paperStepperAreaBigScreenProps: PropTypes.object,
+    paperStepperAreaSmallScreenProps: PropTypes.object,
     stepperSmallScreenProps: PropTypes.object,
     stepperBigScreenProps: PropTypes.object,
     stepSmallScreenProps: PropTypes.object,
@@ -164,11 +164,11 @@ ContentArea.defaultProps = {
 
     appBarTitleTypographyProps: { component: "h2", variant: "h6", style: { marginLeft: 15, marginRight: 15, color: "white" } },
     sidePanelPaperProps: { square: true, elevation: 2, style: { position: "fixed", height: "100vh", alignItems: "center", justifyContent: "center", display: "flex", top: 0, left: 0, background: "#9d9ea0" } },
-    contentAreaBigScreenProps: { style: { marginTop: 88, minHeight:"100vh", flex: "100%", backgroundColor:"#eaeaea" } },
-    contentAreaSmallScreenProps: { style: { marginTop: 88, minHeight:"100vh", flex: "100%", backgroundColor:"#eaeaea" } },
+    contentAreaBigScreenProps: { style: { marginTop: 88, minHeight: "100vh", flex: "100%", backgroundColor: "#eaeaea" } },
+    contentAreaSmallScreenProps: { style: { marginTop: 88, minHeight: "100vh", flex: "100%", backgroundColor: "#eaeaea" } },
     sidePanelTypographyProps: { style: { transform: 'rotate(-90deg)', color: "#ffffff" }, component: "h2", variant: "h4" },
-    PaperStepperAreaSmallScreenProps: { elevation: 8, square: true, style: { width: "100%" } },
-    PaperStepperAreaBigScreenProps: { elevation: 8, square: true, style: { position: "fixed", bottom: 0, left: 0, height: 130, width: "100%" } },
+    paperStepperAreaSmallScreenProps: { elevation: 8, square: true, style: { width: "100%" } },
+    paperStepperAreaBigScreenProps: { elevation: 8, square: true, style: { position: "fixed", bottom: 0, left: 0, height: 130, width: "100%" } },
     stepperSmallScreenProps: {},
     stepperBigScreenProps: {},
     stepSmallScreePropsn: {},
