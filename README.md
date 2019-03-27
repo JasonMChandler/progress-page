@@ -6,7 +6,7 @@ npm i material-ui-progress-page
 
 ## Usage
 
-import ProgressPage from 'progress-page';
+import ProgressPage from 'material-ui-progress-page';
 
 <ProgressPage />
 
