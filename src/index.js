@@ -67,7 +67,7 @@ class ContentArea extends React.Component {
 </Tabs>
 </div>
 </AppBar>
-          <div style={{width:"100%"}}><Hidden xsDown><Paper className={classes.sidePanel} {...this.props.sidePanelPaperProps}><Typography >{this.props.sidePanelText}</Typography></Paper></Hidden><div>
+          <div style={{width:"100%"}}><Hidden xsDown><Paper className={classes.sidePanel} {...this.props.sidePanelPaperProps}><Typography >{this.props.sidePanelText[this.state.tab]}</Typography></Paper></Hidden><div>
           <Hidden xsDown>
           <div className={classes.sidePanelMargin} {...this.props.contentAreaBigScreenProps}>
           {this.state.tab === 0 ? this.props.tableArray.map(function (item, index) {
@@ -149,7 +149,7 @@ ContentArea.propTypes = {
     stepLabelSmallScreenProps: PropTypes.object,
     stepLabelBigScreenProps: PropTypes.object,
 
-    sidePanelText: PropTypes.string,
+    sidePanelText: PropTypes.array,
     title: PropTypes.string,
     projectName: PropTypes.string,
     steps: PropTypes.array,
@@ -175,7 +175,7 @@ ContentArea.defaultProps = {
     stepBigScreenProps: {},
     stepLabelSmallScreenProps: {},
     stepLabelBigScreenProps: {},
-    sidePanelText: "",
+    sidePanelText: ["Hours","Specs","Contract"],
     title: 'Project Progress',
     projectName: "Report",
     steps: [""],
