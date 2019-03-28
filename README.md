@@ -45,7 +45,7 @@ Clicking a tab is there to display markdown text
 |stepBigScreenProps   |   |object   |{}   |
 |stepLabelSmallScreenProps   |   |object   |{}   |
 |stepLabelBigScreenProps   |   |object   |{}   |
-|sidePanelText   |defines the side panel text that's displayed on small screens   |string   |""   |
+|sidePanelText   |defines the side panel text that's displayed on small screens   |array   |["Hours","Specs","Contract"]   |
 |title   |defines the header title   |string   |'Project Progress'   |
 |projectName   |defines the name of the project after the title   |string   |"Report"   |
 |steps   |defines the names of the steps in the stepper component   |array of strings   |[""]   |
