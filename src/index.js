@@ -61,13 +61,13 @@ class ContentArea extends React.Component {
 </div>
 <div style={{ width:"100%", display:"flex", alignItems:"flex-end", justifyContent:"left"}}>
 <Tabs value={this.state.tab} onChange={this.tabsFunction}>
-<Tab key={1} label="Hours" />
-<Tab key={2} label="Specs" />
-<Tab key={3} label="Contract" />
+<Tab key={0} label="Hours" />
+<Tab key={1} label="Specs" />
+<Tab key={2} label="Contract" />
 </Tabs>
 </div>
 </AppBar>
-          <div style={{width:"100%"}}><Hidden xsDown><Paper className={classes.sidePanel} {...this.props.sidePanelPaperProps}><Typography >{this.props.sidePanelText[this.state.tab]}</Typography></Paper></Hidden><div>
+          <div style={{width:"100%"}}><Hidden xsDown><Paper className={classes.sidePanel} {...this.props.sidePanelPaperProps}><Typography {...this.props.sidePanelTypographyProps}>{this.props.sidePanelText[this.state.tab]}</Typography></Paper></Hidden><div>
           <Hidden xsDown>
           <div className={classes.sidePanelMargin} {...this.props.contentAreaBigScreenProps}>
           {this.state.tab === 0 ? this.props.tableArray.map(function (item, index) {
